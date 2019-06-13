@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Petit+Formal+Script|Roboto:300,400,500&subset=latin-ext');
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+/*-----------------------HEADER------------*/
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    border:3px ridge #ffc107;
+    padding:7px;
+   
+}
+
+.navbar-brand:hover{
+    animation: rotate 1s;
+}
+.navbar-nav
+    text-align:center;
+    background:#fff;
+    box-shadow: 7px 7px 10px #000; 
+ 
+}
+.navbar-nav .nav-link{
+    font-size: 1.2rem;
+    color:#000 !Important;
+}
+.navbar-nav .nav-item{
+   border-bottom: 1px solid rgba(146, 145, 145, 0.315);
+}
+.navbar-nav .nav-item:hover {
+    border-bottom: 1px solid #000;
+    background-color: #ffc107;
+  
+ }
+ .navbar-nav .nav-item:hover .nav-link{
+    color:#fff !important;
+ }
+ .navbar-nav li a.active,
+.navbar-nav li a:hover,
+.navbar-nav li:hover .fa{
+    color:#ffc107 !important;
+}
+.navbar-toggler{
+    border:2px solid #fff !important;
+} 
+/*-------------LEADING SECTION------------------*/
+
+.leading{
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.4), rgba(0,0,0, 0.3)), url('img/computer.jpeg');
+    padding:280px 0;
+}
+.leading-text {
+    margin:auto;
+    width: 70%;
+    animation:zoom 2s ease-in-out;
+}
+.leading-text h2{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  
+
+}
+/*---------------ABOUT------------------------*/
+
+.title{
+    text-align: center;
+    color:brown;
+    position: relative;
+}
+.title::after{
+    content:'';
+    position: absolute;
+    top:60px;
+    left:50%;
+    transform: translate(-50%);
+    width:50px;
+    height:3px;
+    background-color:#ffc107;
+    margin-bottom: 10px;
+}
+.about .left{
+    position: relative;
+    animation:fromLeft 1s;
+}
+.about .right{
+    position: relative;
+    animation:fromRight 1s;
+}
+.about li:hover{
+    animation: scales 0.6s ease-out 2 alternate backwards;
+}
+.about li {
+    display: inline-block;
+    padding: 8px 12px;
+}
+.about img {
+    width:50px;
+    height:50px;
+}
+/*----------------PROJECTS--------------------------*/
+section.projects{
+   background-image: linear-gradient( black,rgb(85, 82, 82));
+   background-size: cover;
+  
+}
+.projects img{
+    width:100%;
+    display: block;
+    height: 250px;
+    border: 6px solid #ffc107;
+}
+.projects article{
+    box-shadow: 6px 5px 15px #fff;
+}
+ .projects .hover{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.801), rgba(148, 148, 147, 0.603));
+    display: none; 
+
+}
+.projects article:hover .hover{
+    display: block;    
+ 
+}
+.hover-items{  
+   left:50% !Important;
+   top:50% !Important;
+   transform: translate(-50%, -50%);
+}
+.hover-items .fa{
+    font-size: 1.6rem;
+    color:#fff;
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffc107;
+}
+.hover-items .fa:hover{
+    color:#ffc107;
+    background-color: #fff;
+}
+.projects-more{
+    padding: 10px;
+    width:80%;
+    background-color:#ffc107;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(235, 215, 35, 0.342));
+    color: #000;
+    margin:20px auto;
+    border:5px double #fff;
+    border-radius: 10px;
+    animation: appear 2s ease-out;
+   
+}
+.projects p{
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bold;
+}                               
+/*----------------CONTACT-------------------*/
+.contact p{
+    font-family: 'Pacifico', cursive;   
+    text-shadow: 2px 2px 10px #000;
+}
+.contact-more {
+      width: 240px;
+      height: 160px;
+      background: #ffc107;
+      position: relative;
+      border-radius: 20px; 
+      padding: 15px 10px 5px;
+      margin: auto;
+    } 
+    .contact-more:after {
+       content: "";
+       position: absolute;
+       left: 100%; 
+       top: 55px;
+       width: 0;
+       height: 0;
+       border-top: 16px solid transparent;
+       border-left: 32px solid #ffc107;
+       border-bottom: 16px solid transparent;
+     } 
+     .contact-more a{
+         font-family:  'Pacifico', cursive;   
+     }
+
+     .contact-more span {
+         font-size: 2rem;
+         font-weight: bold;
+         display: block;
+         color:red;
+     }
+     .contact-more .btn {
+         color: red;
+     }
+     .contact-more .btn:hover {
+        color: white;
+        background-color: rgba(255, 0, 0, 0.681);
+        transform: scale(1.2);
+        transition: 0.3s linear;
+    }
+     .social-item{
+         display: inline-block;
+         background-color: #000;
+         width: 60px;
+         height: 60px;
+         line-height: 75px;
+         text-align: center;
+         border-radius: 50%;
+         margin: 5px;
+     }
+     .social-item:hover {
+         transform:rotate(360deg);
+         transition: 0.5s ease-out;
+         opacity: 0.5;
+     }
+     .social-item .fa {
+        display: inline-block;
+        font-size: 2rem;
+        color:#fff;
+    }
+     .social-item:first-of-type{
+         background-color: #3c5a99;   
+         animation:slideUp 1s ease-in 0.4s;     
+     }
+     .social-item:nth-of-type(2){    
+        animation:slideUp 1s ease-in 0.8s;
+    }
+     .social-item:nth-of-type(3){
+        background-color: 	#00aff0 ;    
+        animation:slideUp 1s ease-in 1.2s;
+    }
+
+    .social-item:nth-of-type(4){
+        background-color: #0077B5;   
+        animation:slideUp 1s ease-in 1.6s;
+    }
+     /*--------------CONTACT-PAGE-------------------*/
+     .contact-page{
+        background-image:linear-gradient(to bottom, transparent, black), url('img/computer.jpeg');
+        background-size: cover;
+        height: 100vh;
+    }
+    .contact-page form{
+        width:100%;
+        margin: 30px auto;
+        border: 4px solid black;
+       background-color: #fff;
+
+    }
+    .contact-page .form-title {
+        padding: 15px 0;
+        font-family: 'Pacifico', cursive;
+        color:rgb(168, 164, 164);
+
+    }
+   .contact-page .form-group{
+       margin-bottom: 0;
+       padding: 0px 39px;
+       border: none !important;
+      
+   }
+   .contact-page .form-control {
+       border: none;
+       border-radius: 0;
+       border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   }
+   .contact-page .form-control:hover,
+   .contact-page .form-control:active,
+   .contact-page .form-control:focus{
+       box-shadow: none;
+       background-color:#ffc1072d;
+       transition:0.6s ease-out;
+       color:#000;
+
+   }
+   .contact-page button {
+      margin:5px 40px;
+      text-align: left;
+   }
+   /*---------------FOOTER------------------------*/
+   footer p{
+    font-family: 'Pacifico', cursive;
+   }
+
+   /*----------------MODAL----------------------*/
+ .modal-header {
+    font-family: 'Pacifico', cursive;   
+}
+ .modal-title{
+    font-size: 2rem;
+}
+ .modal-body{
+    font-family:'Times New Roman', Times, serif;
+}
+/*-------------ANIMATIONS--------------------------*/
+@keyframes rotate{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+       transform:rotate(360deg);
+    }
+ }
+ @keyframes appear{
+    0%{
+        opacity:0;     
+    }
+    70%{
+        opacity:0.8;
+        transform:scale(1.2);
+    }
+    100%{
+      opacity:1;  
+    }
+}
+.zoom{
+    animation-name: zoom;
+    visibility: visible;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+@keyframes zoom{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+       transform:scale(1); 
+    }
+}
+
+@keyframes fromLeft{
+    from{
+        left:-1000px;
+    }
+    to{
+       left:0px;
+    }
+}
+@keyframes fromRight{
+    from{
+        right:-1000px;
+    }
+    to{
+       right:0px;
+    }
+}
+@keyframes scales{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+@keyframes slideUp {
+    0%{
+        opacity:0;
+        transform:translateY(150%);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/*---------------RESPONSIVE---------------------*/
+@media(min-width:576px) {
+   .about,
+   .projects,
+   .contact {
+       padding: 80px 0 !Important;
+   }
+   .contact p{
+       font-size: 1.5rem;
+   }
+   .contact-page form{
+    width:90%;
+   }
+  .projects-more{
+      width:70%;
+  }
+
+}   
+@media(min-width:768px) {
+    .navbar-nav{
+        background: none !important;
+        box-shadow: none;
+    }
+    .navbar-nav .nav-item{
+        border-bottom: 2px solid transparent;     
+    }
+    .navbar-nav .nav-link{
+        color:#fff !important;
+        font-size: 1.5rem;
+        text-shadow: 4px 4px 5px #000;
+    }
+    .navbar-nav .nav-item:hover {
+        border-bottom:none;   
+        background-color: transparent !Important;   
+    }
+
+    .leading-text h2{
+        font-size: 3.4rem;
+    }
+    .about,
+    .projects{
+        padding: 70px 0 !Important;
+    }
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+   
+    .bottom-border {
+        display: inline-block;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+    }
+    .bottom-border:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: #FCE38A;
+        height: 2px;
+        transition-property: right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    .bottom-border:hover:before, 
+    .bottom-border:focus:before, 
+    .bottom-border:active:before {
+        right: 0;
+    }
+    .contact p{
+        font-size: 2rem;
+    }
+    .contact-page form{
+        width:80%;
+       }
+       .contact-more{
+        width: 280px;
+    }
+}
+@media(min-width:992px) {
+    .navbar-nav .nav-link{
+        font-size: 1.75rem;
+    .contact-page form{
+        width:70%;
+       }
+       .projects-more{
+        width:50%;
+    }  
+}
+@media(min-width:1200px) {
+    .contact-page form{
+        width:50%;
+       }
+
+}
